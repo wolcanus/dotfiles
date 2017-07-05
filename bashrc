@@ -18,15 +18,7 @@ parse_git_branch() {
 }
 
 # set ps1
-if [ -f $BASH_COMPLETION_DIR/git ] && [ -f `which rbenv` ]; then
-  export PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;34m\]\$\[\033[00m\] '
-elif [ -f $BASH_COMPLETION_DIR/git ]; then
-  export PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;34m\]\$\[\033[00m\]  '
-elif [ `which rbenv` ]; then
-  export PS1="\[\033[38;5;66m\]➜ \[\033[38;5;62m\]\\W \[\033[38;5;244m\]\$(parse_git_branch) \[\033[01;34m\]\$\[\033[00m\] "
-else
-  export PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \n\[\033[01;34m\]\$\[\033[00m\] '
-fi
+export PS1="\[\033[38;5;66m\]➜ \[\033[38;5;62m\]\\W \[\033[38;5;244m\]\$(parse_git_branch) \[\033[01;34m\]\$\[\033[00m\] "
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -95,15 +87,6 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
