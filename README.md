@@ -6,14 +6,6 @@ If you're looking for Linux version:
 * [Ubuntu](https://github.com/wevtimoteo/dotfiles/tree/ubuntu)
 * [Fedora](https://github.com/wevtimoteo/dotfiles/tree/fedora)
 
-## Setup
-
-```
-git clone git://github.com/wevtimoteo/dotfiles.git
-cd dotfiles
-sh install.sh
-```
-
 ## References:
 
   * https://github.com/dynaum/dotfiles
