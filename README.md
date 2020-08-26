@@ -1,5 +1,5 @@
-Dotfiles for MacOS
-==================
+Dotfiles
+========
 
 If you're looking for Linux version:
 
