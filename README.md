@@ -1,9 +1,6 @@
 Dotfiles for MacOS
 ==================
 
-
-
-
 If you're looking for Linux version:
 
 * [Ubuntu](https://github.com/wevtimoteo/dotfiles/tree/ubuntu)
